@@ -1,0 +1,19 @@
+[font]
+size = 18.0
+
+[font.normal]
+family = "MesloLGS Nerd Font Mono"
+style = "Regular"
+
+[window]
+opacity = 0.8
+
+[window.padding]
+x = 15
+y = 15
+
+[selection]
+save_to_clipboard = true
+
+[terminal]
+shell = "/bin/zsh"

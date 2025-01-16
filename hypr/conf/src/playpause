@@ -1,0 +1,12 @@
+music_status=`playerctl status`
+paused='Paused'
+playing='Playing'
+
+if [[ $music_status =~ $paused ]];
+then
+  playerctl play
+elif [[ $music_status =~ $playing ]];
+then
+  playerctl pause
+fi
+  

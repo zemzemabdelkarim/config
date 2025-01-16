@@ -1,0 +1,12 @@
+mixer_output=`amixer -D pulse sget Master`
+off='off'
+#test=`[$mixer_output=~$off]`
+#echo $test
+if [[ $mixer_output =~ $off ]];
+then
+  echo "it's there"
+  amixer -D pulse sset Master unmute
+else
+  echo "it's not there"
+  amixer -D pulse sset Master mute
+fi
